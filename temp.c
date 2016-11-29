@@ -67,7 +67,7 @@ task autonomous()
 		//wait1Msec(2000);						// Robot waits for 2000 milliseconds before executing program
 
 	// Move forward at full power for 3 seconds (extension function)
-		motor[WheelR] = 80;		  // Motor on port2 is run at full (127) power forward
+		/*motor[WheelR] = 80;		  // Motor on port2 is run at full (127) power forward
 		motor[WheelL] = 127;		  // Motor on port3 is run at full (127) power forward
 		wait1Msec(2500);			        // Robot runs previous code for 3000 milliseconds (3s) before moving on
 		motor[WheelR] = 0;
@@ -123,7 +123,7 @@ task autonomous()
 		wait1Msec(50);
 		motor[Scissors] = -127;
 		wait1Msec(800);
-		motor[Scissors] = 0;
+		motor[Scissors] = 0;*/
 }
 
 /*---------------------------------------------------------------------------*/
