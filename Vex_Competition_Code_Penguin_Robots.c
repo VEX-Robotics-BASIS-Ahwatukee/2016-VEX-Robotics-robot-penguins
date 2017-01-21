@@ -68,7 +68,11 @@ task autonomous()
 	// Move forward at full power for 3 seconds (extension function)
 	  motor[WheelR] = 127;		  // Motor on port2 is run at full (127) power forward
 		motor[WheelL]  = 127;		  // Motor on port3 is run at full (127) power forward
+<<<<<<< HEAD
+		wait1Msec(2825);			    // Robot runs previous code for 3000 milliseconds (3s) before moving on
+=======
 		wait1Msec(3000);			    // Robot runs previous code for 3000 milliseconds (3s) before moving on
+>>>>>>> origin/master
 		motor[WheelR] = 0;
 		motor[WheelL] = 0;
 		motor[Scissors]  = 127;		    // Motor on port5 is run at full (127) power to extend the Scissors
@@ -76,6 +80,26 @@ task autonomous()
 		motor[Scissors]  = -127;		  // Motor on port5 is run at full (-127) power backwards
 		wait1Msec(1000);							// Retract Scissors
 		motor[Scissors]  = 0;					// Turn off motor
+<<<<<<< HEAD
+		motor[WheelR] = 80;           // Turn 120 degrees
+		motor[WheelL] = -127;         // Turn 120 degrees in combination with right motor
+		wait1Msec(1550);
+		motor[WheelL] = 0;
+		motor[WheelR] = 0;
+		motor[WheelL] = 50;
+		motor[WheelR] = 50;
+		wait1Msec(180);
+		motor[WheelL] = 0;
+		motor[WheelR] = 0;
+	//	motor[WheelR] = 80;
+	//	motor[WheelL] = -270;
+	//	wait1Msec(100);
+	//	motor[WheelL] = 0;
+	//  motor[WheelR] = 0
+		motor[ClimbArm] =  127;
+		wait1Msec(2500);
+		motor[ClimbArm] = 0; //Posibbility of changing it so that the high-hang goes lower
+=======
 		motor[WheelR] = 80;
 		motor[WheelL] = -270;
 		wait1Msec(1100);
@@ -84,6 +108,7 @@ task autonomous()
 		motor[ClimbArm] = 127;
 		wait1Msec(2500);
 		motor[ClimbArm] = 0;
+>>>>>>> origin/master
 	/*
 		//Alternative.. Start in backwards position.
 		//drive forward(backward) to fence
