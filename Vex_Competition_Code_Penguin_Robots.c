@@ -68,7 +68,7 @@ task autonomous()
 	// Move forward at full power for 3 seconds (extension function)
 	  motor[WheelR] = 127;		  // Motor on port2 is run at full (127) power forward
 		motor[WheelL]  = 127;		  // Motor on port3 is run at full (127) power forward
-		wait1Msec(2825);			    // Robot runs previous code for 3000 milliseconds (3s) before moving on
+		wait1Msec(2800);			    // Robot runs previous code for 3000 milliseconds (3s) before moving on
 		motor[WheelR] = 0;
 		motor[WheelL] = 0;
 		motor[Scissors]  = 127;		    // Motor on port5 is run at full (127) power to extend the Scissors
